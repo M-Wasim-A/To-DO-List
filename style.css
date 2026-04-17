@@ -2,3 +2,61 @@
     padding: 0;
     margin: 0;
 }
+
+body{
+    background-color: rgb(219, 236, 255);
+}
+main {
+    width:80vw;
+    height:90vh;
+    border: 2px solid black;
+    margin: 4vh auto;
+    display: flex;
+}
+aside{
+    width: 20vw;
+    height: 100%;
+    border: 1px solid blue;
+    background-color: whitesmoke;
+}
+section{
+    width: 60vw;
+    height: 100%;
+    border: 1px solid red;
+}
+.logo{
+    width: 100%;
+    height: 7vh;
+    border: 1px solid yellow;
+}
+.searchTask{
+    width: 100%;
+    height: 14vh;
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.addTask{
+    width: 100%;
+    height: 14vh;
+    border: 1px solid crimson;
+}
+.navTask{
+    width: 100%;
+    height: 7vh;
+    border: 1px solid gold;
+}
+.navTask ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding: 20px;
+}
+.navTask ul li a{
+    text-decoration: none;
+}
+.btn-1{
+    width: 100px;
+    height: 20px;
+}
