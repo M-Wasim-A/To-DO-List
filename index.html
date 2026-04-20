@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,84 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <main>
         <aside>
             <div class="logo"></div>
+            <nav aria-label="sidePanel" class="navPanel">
+                <ul>
+                    <li>
+                        <div class="allTasks">
+                            <img width="20" height="20" src="https://img.icons8.com/fluency/96/tasks--v1.png"
+                                alt="tasks--v1" />
+                            <a href="#">All Tasks</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="allTasks">
+                            <img width="20" height="20" src="https://img.icons8.com/ios/100/today.png" alt="today" />
+                            <a href="#">Today</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="allTasks">
+                            <img width="20" height="20" src="https://img.icons8.com/papercut/60/box-important--v2.png"
+                                alt="box-important--v2" />
+                            <a href="#">Important</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="allTasks">
+                            <img width="20" height="20" src="https://img.icons8.com/parakeet/96/task-completed.png"
+                                alt="task-completed" />
+                            <a href="#">Completed</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <hr>
+            <nav aria-label="sidePanel2" class="navPanel2">
+                <ul>
+                    <li><div class="allTasks2">
+                        <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/60/project.png" alt="project"/>
+                        <a href="#">Work Projects</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="allTasks2">
+                            <img width="20" height="20" src="https://img.icons8.com/external-flat-wichaiwi/64/external-personal-general-data-protection-regulation-gdpr-flat-wichaiwi.png" alt="external-personal-general-data-protection-regulation-gdpr-flat-wichaiwi"/>
+                            <a href="#">Personal</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <hr id="hr">
+            <button class="listBtn">
+                <span><img width="24" height="24" src="https://img.icons8.com/android/24/228BE6/plus.png" alt="plus"/></span>New List
+            </button>
         </aside>
-        <section>
+        <section class="section">
             <div class="searchTask">
                 <form class="formSearch">
-                    <input type="search" name="search" placeholder="Search Tasks...">
+                    <input type="search" name="search" class="inputSearch" placeholder="Search Tasks...">
+                    <img id="icon" width="20" height="20" src="https://img.icons8.com/ios/50/search--v1.png"
+                        alt="search--v1" />
                 </form>
-                <button type="button" class="btn-1">asdf</button>
+                <div class="toggle">
+                    <input type="radio" name="theme" id="sun" checked>
+                    <label for="sun" class="btn">☀️</label>
+                    <input type="radio" name="theme" id="moon">
+                    <label for="moon" class="btn">🌙</label>
+                    <div class="slider"></div>
+                </div>
             </div>
-            <div class="addTask"></div>
+            <div class="addTask">
+                <form class="formTask">
+                    <input type="text" name="addTask" class="task" placeholder="Add a new task...">
+                </form>
+                <button type="button" class="btn-1">Add</button>
+            </div>
             <nav aria-label="Tasks" class="navTask">
                 <ul>
                     <li><a href="#">All</a></li>
@@ -30,4 +96,5 @@
         </section>
     </main>
 </body>
+
 </html>

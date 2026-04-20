@@ -1,62 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+    font-family: poppins;
+    font-size: 12px;
 }
 
 body{
     background-color: rgb(219, 236, 255);
 }
 main {
-    width:80vw;
+    width:65vw;
     height:90vh;
-    border: 2px solid black;
     margin: 4vh auto;
     display: flex;
+    box-shadow: 10px 10px 20px rgb(185, 219, 232);
+    overflow: hidden;
+    border-radius: 10px;
 }
 aside{
-    width: 20vw;
+    width: 14vw;
     height: 100%;
-    border: 1px solid blue;
     background-color: whitesmoke;
+    overflow: hidden;
 }
 section{
-    width: 60vw;
+    width: 51vw;
     height: 100%;
-    border: 1px solid red;
 }
 .logo{
     width: 100%;
-    height: 7vh;
-    border: 1px solid yellow;
+    height: 10vh;
+    border: 1px solid rgb(255, 0, 0);
 }
 .searchTask{
     width: 100%;
     height: 14vh;
-    border: 1px solid green;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    background-color: white;
+    gap: 250px;
 }
 .addTask{
     width: 100%;
     height: 14vh;
-    border: 1px solid crimson;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background-color: white;
+    margin-top: 2px;
 }
 .navTask{
     width: 100%;
-    height: 7vh;
-    border: 1px solid gold;
+    height: 6vh;
+    background-color: white;
+    margin-top: 2px;
 }
 .navTask ul{
     display: flex;
     list-style: none;
     gap: 40px;
-    padding: 20px;
+    padding: 8px 20px;
 }
-.navTask ul li a{
+.navTask ul li a, a:visited, a:active, a:hover{
     text-decoration: none;
+    color: inherit;
+}
+
+.inputSearch{
+    padding: 10px 20px 8px 35px;
+    width: 20vw;
+    border-radius: 5px;
+    transition: 0.4s ease;
+    border: none;
+    outline: none;
+    background-color: rgb(230, 241, 254);
+}
+.formSearch{
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+#icon{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    transition: 0.3s ease;
+}
+.inputSearch:not(:placeholder-shown) + #icon{
+    display: none;
+}
+.inputSearch:not(:placeholder-shown){
+    padding-left: 20px;
+}
+.inputSearch::-webkit-search-cancel-button{
+    -webkit-appearance:none;
+}
+.section{
+    background-color: rgb(230, 241, 254);
+}
+.toggle{
+    display: flex;
+    position:relative;
+    background: #ccc;
+    padding: 5px;
+    width: 100px;
+    border-radius: 30px;
+}
+.toggle input{
+    display: none;
+}
+.btn{
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 2;
+}
+.slider{
+    position: absolute;
+    background-color: red;
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+    z-index: 1;
+}
+#moon:checked ~ .slider{
+    left: 50%;
+}
+#sun:checked ~ .slider{
+    left: 0;
+}
+.task{
+    padding: 10px 10px 10px 10px;
+    width: 39vw;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    outline: none;
+    background-color: white;
+}
+.formTask{
+    padding-left: 18px;
 }
 .btn-1{
-    width: 100px;
-    height: 20px;
+    padding: 11px 25px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(0, 102, 255);
+    color: white;
+    cursor: pointer;
+}
+.navPanel ul{
+    display: flex;
+    flex-direction:column;
+    list-style: none;
+    gap: 25px;
+    align-items:center;
+    padding-top: 20px;
+    
+}
+.navPanel ul li{
+    width: 80%;
+}
+.navPanel ul li a{
+    text-decoration: none;
+    
+}
+.allTasks{
+    display: flex;
+    gap: 10px;
+}
+hr{
+    margin: 15px auto;
+    width: 90%;
+    border: 0;
+    border-top: 1px solid skyblue;
+}
+.navPanel2 ul{
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    padding-top: 10px;
+}
+.navPanel2 ul li{
+    width: 80%;
+}
+
+.navPanel2 ul li a{
+    text-decoration: none;
+}
+.allTasks2{
+    display: flex;
+    gap: 10px;
+}
+#hr{
+    border: none;
+    border-top: 1px solid skyblue;
+    margin:30px auto 0px auto;
+    width: 90%;
+}
+.listBtn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background:none;
+    border: none;
+    cursor: pointer;
+    padding: 10px 0px 0px 20px;
 }
