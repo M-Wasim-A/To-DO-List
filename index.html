@@ -62,7 +62,7 @@
             </nav>
             <hr id="hr">
             <button class="listBtn">
-                <span><img width="24" height="24" src="https://img.icons8.com/android/24/228BE6/plus.png" alt="plus"/></span>New List
+                <span><img width="20" height="20" src="https://img.icons8.com/android/24/228BE6/plus.png" alt="plus"/></span>New List
             </button>
         </aside>
         <section class="section">
@@ -82,7 +82,7 @@
             </div>
             <div class="addTask">
                 <form class="formTask">
-                    <input type="text" name="addTask" class="task" placeholder="Add a new task...">
+                    <input type="text" name="addTask" class="newtask" placeholder="Add a new task...">
                 </form>
                 <button type="button" class="btn-1">Add</button>
             </div>
@@ -93,6 +93,30 @@
                     <li><a href="#">Completed</a></li>
                 </ul>
             </nav>
+            <div class="task"></div>
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Tasks</h3>
+                    <div class="count"><p>0</p></div>
+                    <div class="bar">
+                        <div class="barFill"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Completed</h3>
+                    <div class="count" id="countC"><p>0</p></div>
+                    <div class="bar">
+                        <div class="barFill" id="barFillC"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Pending</h3>
+                    <div class="count" id="countP"><p>0</p></div>
+                    <div class="bar">
+                        <div class="barFill" id="barFillP"></div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>

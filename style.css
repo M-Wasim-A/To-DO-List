@@ -1,40 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: poppins;
     font-size: 12px;
 }
 
-body{
+body {
     background-color: rgb(219, 236, 255);
 }
+
 main {
-    width:65vw;
-    height:90vh;
+    width: 65vw;
+    height: 90vh;
     margin: 4vh auto;
     display: flex;
     box-shadow: 10px 10px 20px rgb(185, 219, 232);
     overflow: hidden;
     border-radius: 10px;
 }
-aside{
+
+aside {
     width: 14vw;
     height: 100%;
     background-color: whitesmoke;
     overflow: hidden;
 }
-section{
+
+section {
     width: 51vw;
     height: 100%;
 }
-.logo{
+
+.logo {
     width: 100%;
     height: 10vh;
     border: 1px solid rgb(255, 0, 0);
 }
-.searchTask{
+
+.searchTask {
     width: 100%;
     height: 14vh;
     display: flex;
@@ -42,7 +47,8 @@ section{
     background-color: white;
     gap: 250px;
 }
-.addTask{
+
+.addTask {
     width: 100%;
     height: 14vh;
     display: flex;
@@ -51,24 +57,30 @@ section{
     background-color: white;
     margin-top: 2px;
 }
-.navTask{
+
+.navTask {
     width: 100%;
     height: 6vh;
     background-color: white;
     margin-top: 2px;
 }
-.navTask ul{
+
+.navTask ul {
     display: flex;
     list-style: none;
     gap: 40px;
     padding: 8px 20px;
 }
-.navTask ul li a, a:visited, a:active, a:hover{
+
+.navTask ul li a,
+a:visited,
+a:active,
+a:hover {
     text-decoration: none;
     color: inherit;
 }
 
-.inputSearch{
+.inputSearch {
     padding: 10px 20px 8px 35px;
     width: 20vw;
     border-radius: 5px;
@@ -77,48 +89,58 @@ section{
     outline: none;
     background-color: rgb(230, 241, 254);
 }
-.formSearch{
+
+.formSearch {
     position: relative;
     display: inline-block;
     margin-left: 20px;
 }
-#icon{
+
+#icon {
     position: absolute;
     left: 10px;
     top: 10px;
     transition: 0.3s ease;
 }
-.inputSearch:not(:placeholder-shown) + #icon{
+
+.inputSearch:not(:placeholder-shown)+#icon {
     display: none;
 }
-.inputSearch:not(:placeholder-shown){
+
+.inputSearch:not(:placeholder-shown) {
     padding-left: 20px;
 }
-.inputSearch::-webkit-search-cancel-button{
-    -webkit-appearance:none;
+
+.inputSearch::-webkit-search-cancel-button {
+    -webkit-appearance: none;
 }
-.section{
+
+.section {
     background-color: rgb(230, 241, 254);
 }
-.toggle{
+
+.toggle {
     display: flex;
-    position:relative;
+    position: relative;
     background: #ccc;
     padding: 5px;
     width: 100px;
     border-radius: 30px;
 }
-.toggle input{
+
+.toggle input {
     display: none;
 }
-.btn{
+
+.btn {
     flex: 1;
     text-align: center;
     cursor: pointer;
     font-size: 20px;
     z-index: 2;
 }
-.slider{
+
+.slider {
     position: absolute;
     background-color: red;
     width: 50%;
@@ -129,13 +151,16 @@ section{
     transition: 0.3s;
     z-index: 1;
 }
-#moon:checked ~ .slider{
+
+#moon:checked~.slider {
     left: 50%;
 }
-#sun:checked ~ .slider{
+
+#sun:checked~.slider {
     left: 0;
 }
-.task{
+
+.newtask {
     padding: 10px 10px 10px 10px;
     width: 39vw;
     border-radius: 5px;
@@ -143,10 +168,12 @@ section{
     outline: none;
     background-color: white;
 }
-.formTask{
+
+.formTask {
     padding-left: 18px;
 }
-.btn-1{
+
+.btn-1 {
     padding: 11px 25px;
     border-radius: 5px;
     outline: none;
@@ -155,63 +182,135 @@ section{
     color: white;
     cursor: pointer;
 }
-.navPanel ul{
+
+.navPanel ul {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     list-style: none;
     gap: 25px;
-    align-items:center;
+    align-items: center;
     padding-top: 20px;
-    
+
 }
-.navPanel ul li{
+
+.navPanel ul li {
     width: 80%;
 }
-.navPanel ul li a{
+
+.navPanel ul li a {
     text-decoration: none;
-    
+
 }
-.allTasks{
+
+.allTasks {
     display: flex;
     gap: 10px;
 }
-hr{
+
+hr {
     margin: 15px auto;
     width: 90%;
     border: 0;
     border-top: 1px solid skyblue;
 }
-.navPanel2 ul{
+
+.navPanel2 ul {
     list-style: none;
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 25px;
     align-items: center;
     padding-top: 10px;
 }
-.navPanel2 ul li{
+
+.navPanel2 ul li {
     width: 80%;
 }
 
-.navPanel2 ul li a{
+.navPanel2 ul li a {
     text-decoration: none;
 }
-.allTasks2{
+
+.allTasks2 {
     display: flex;
     gap: 10px;
 }
-#hr{
+
+#hr {
     border: none;
     border-top: 1px solid skyblue;
-    margin:30px auto 0px auto;
+    margin: 30px auto 0px auto;
     width: 90%;
 }
-.listBtn{
+
+.listBtn {
     display: flex;
     align-items: center;
-    gap: 10px;
-    background:none;
+    gap: 8px;
+    background: none;
     border: none;
     cursor: pointer;
     padding: 10px 0px 0px 20px;
+    font-size: 15px;
+    color: rgb(0, 92, 128);
+    font-weight: bold;
+}
+
+.task {
+    width: 99%;
+    height: 40vh;
+    margin: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    width: 90%;
+    height: 13vh;
+    margin: 5px auto 0px auto;
+    display: flex;
+    gap: 15px;
+}
+
+.card {
+    width: 18vw;
+    height: 12vh;
+    margin: auto;
+    padding: 5px 0px 0px 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.count p {
+    font-size: 25px;
+    color: rgb(44, 104, 216);
+}
+
+.bar {
+    width: 90%;
+    height: 10px;
+    background-color: #bbe3ea;
+    border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.barFill {
+    width: 50%;
+    height: 100%;
+    background: rgb(44, 104, 216);
+    transition: width 0.5s ease;
+}
+#barFillC{
+    background-color: green;
+}
+#countC p{
+    color: green;
+}
+#barFillP{
+    background-color: rgb(255, 77, 0);
+}
+#countP p{
+    color:  rgb(255, 77, 0);
 }
