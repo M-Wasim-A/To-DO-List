@@ -321,6 +321,7 @@ hr {
     border-radius: 4px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .taskAdded p{
     padding-left: 15px;
@@ -341,4 +342,14 @@ hr {
     border-radius: 4px;
     font-size: 10px;
     font-weight: bold;
+}
+.btn-2{
+    padding: 3px 8px;
+    cursor: pointer;
+}
+.btns{
+    display: flex;
+    gap: 5px;
+    width: 20%;
+    justify-content: center;
 }
